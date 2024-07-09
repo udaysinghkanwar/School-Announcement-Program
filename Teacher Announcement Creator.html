@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<!--Teacher Announcement Creator Page-->
+<html>
+    <head>
+        <script src="Teacher.js"> </script>
+        <title> Teacher Announcement Creator </title>
+        <link rel="stylesheet" href="teacherannouncement.css">
+    </head>
+    <body onload="getExistingAnnouncement()">
+<!--Table for 3 different tabs at the top of the page-->
+
+        <div class="topbar"> 
+            <a href="Login Page.html">
+                <img  class="logo1" src="C:\Users\udayk\Downloads\xXpVpaZ__400x400.png" width="100" height="100">
+            </a>
+            <h1>Welcome Back!</h1> 
+            <a href="Login Page.html">
+                <img class="logo2"src="C:\Users\udayk\Downloads\xXpVpaZ__400x400.png" width="100" height="100">
+            </a>
+        </div>
+
+        <table>
+            <tr>
+                
+                <td> <a href="Login Page.html" style="text-decoration: none;"> Home </a>  </td>
+                 
+                <th> Create Announcement </th>
+
+            </tr>
+        </table>
+
+        <br>
+        <br>
+
+<!--Creating an Announcement Title text box using the input tag-->
+
+        <h3 class="Title" >Announcement Title</h3>
+            <textarea class="announcementTitle" id="htmlTTitle" type="text" placeholder="Title..." ></textarea>
+        
+        <br>
+<!--Creating an Announcement Body textbox using the <textarea> tag-->
+        <h3  class="Body" >Body</h3>
+            <textarea class="bodyTitle" id="htmlTbody" rows="20" cols="100" placeholder="Type something here..." ></textarea>
+
+        <br> <br>
+
+        
+<!--Announcement Filters-->
+<!--Creating checkboxes for different filters using input tags and type= checkbox-->
+        <h5>Filters</h5>
+<!--Grades-->
+        <div class="Filters"> 
+            <div class="Grades"> 
+        <h4>Grade</h4>
+            <input id="htmlTAll" type="checkbox" > All
+            <input id="htmlTGrade9" type="checkbox" > Grade 9
+            <input id="htmlTGrade10" type="checkbox" > Grade 10
+            <input id="htmlTGrade11" type="checkbox" > Grade 11
+            <input id="htmlTGrade12" type="checkbox"> Grade 12
+
+            </div>
+        
+<!--Gender-->
+
+        <div class="Gender"> 
+        <h4>Gender</h4>
+          <input id="htmlTMale" type="checkbox"> Male
+          <input id="htmlTFemale"type="checkbox" > Female
+          <input id="htmlTOther" type="checkbox" > Other
+          <input id="htmlTGenderAll" type="checkbox" > All
+        </div>
+<!--Clubs-->
+<!--Dropdown list for clubs using the select tag and addding different options for dropdown list-->
+
+        <div class="Clubs"> 
+        <h4>Clubs</h4>
+            <label for="htmlTClubs">Select One :</label>
+            <select id="htmlTClubs" >
+                <option value="Select One"> Select One </option>
+                <option value="Hack Club">Hack Club</option>
+                <option value="Decca">Decca</option>
+                <option value="Hosa" >Hosa</option>
+                <option value="Chess Club" >Chess Club</option>
+                <option value="Model UN" >Model Un</option>
+                <option value="Debate Club" >Debate Club</option>
+            </select>
+        </div>
+<!--Time-->
+        <div class="Time"> 
+        <h4>Time</h4>
+            <input id="htmlTBeforeSchool" type="checkbox" > Before School
+            <input id="htmlTLunch" type="checkbox" > Lunch
+            <input id="htmlTAfterSchool" type="checkbox"> After School
+
+        </div>
+
+          <br>
+          <br>
+          <br>
+        </div>
+<!--Post and Save as Draft button-->
+<!--Using the onclick event to call the function created in the teacher javascript file-->
+          <input type="submit" class="Post" value="Post" onclick="getTeacherInput()"> 
+          <input type="submit" class="Draft" value="Save as Draft" onclick="getTeacherInput()" > 
+          <div class="box"> </div>
+    </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="Student Search Page.js"> </script>
+        <title> Student Announcement Search</title>  
+        <link rel="stylesheet" href="StudentSearch.css">
+    </head>
+    <body>
+        <div class="topbar"> 
+            <a href="Login Page.html">
+                <img  class="logo1" src="C:\Users\udayk\Downloads\xXpVpaZ__400x400.png" width="180" height="180">
+            </a>
+            <h1>Welcome Back!</h1> 
+            <a href="Login Page.html">
+                <img class="logo2"src="C:\Users\udayk\Downloads\xXpVpaZ__400x400.png" width="180" height="180">
+            </a>
+        </div>
+        <br>
+<!--Creating Search Bar using input tags and adding placeholder text-->
+<!--Using the onclick event to call the function created in the Student search page javascript file-->
+
+
+        <div class="searchbar"> 
+            <a href="Login Page.html">
+                <img class="home" src="C:\Users\udayk\Desktop\25694.png" width="50px" height="55px">
+            </a>
+            <p1 class="announcements"> Announcements  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    | </p1>
+            &nbsp;&nbsp; <input class="search" id="htmlSSearch" type="text" placeholder="Enter Keywords or a Date">
+
+            <form action="Student Search Result.html"> 
+                <button type="submit" onclick="getStudentInput()"> Search </button>
+            </form>
+        </div>
+      
+        <br> <br> <br>
+
+<!--Filters-->
+        
+
+            <h5>Filters</h5>
+<!-- Creating checkboxes using input tag and type= checkboxes for different filters-->
+<!--Grade--><div class="Filters" id="htmlSFilter"></div>
+                <div class="Grades">
+            <h4>Grade</h4>
+                <input id="htmlSAll" type="checkbox"> All
+                <input id="htmlSGrade9" type="checkbox"> Grade 9
+                <input id="htmlSGrade10" type="checkbox"> Grade 10
+                <input id="htmlSGrade11" type="checkbox"> Grade 11
+                <input id="htmlSGrade12" type="checkbox"> Grade 12
+                </div>
+<!--Gender-->
+            <div class="Gender"> 
+            <h4>Gender</h4>
+                <input id="htmlSMale" type="checkbox"> Male
+                <input id="htmlSFemale" type="checkbox"> Female
+                <input id="htmlSOther" type="checkbox"> Other
+                <input id= "htmlSGenderAll" type ="checkbox"> All 
+            </div>
+<!--Clubs-->
+<!--Using the select tage to create a dropdown list and adding options to the list-->
+            <div class="Clubs">
+            <h4>Clubs</h4>
+            <label for="htmlSClubs">Select One :</label>
+            <select id="htmlSClubs" >
+                <option value="Select One"> Select One </option>
+                <option value="Hack Club">Hack Club</option>
+                <option value="Decca">Decca</option>
+                <option value="Hosa">Hosa</option>
+                <option value="Chess Club">Chess Club</option>
+                <option value="Model UN">Model Un</option>
+                <option value="Debate Club">Debate Club</option>
+            </select>
+            </div>
+<!--Time--> 
+            <div class="Time"> 
+            <h4>Time</h4>
+                <input id="htmlSBeforeSchool" type="checkbox"> Before School
+                <input id="htmlSLunch" type="checkbox"> Lunch
+                <input id="htmlSAfterSchool" type="checkbox"> After School
+            </div>
+        </div>
+        <iframe src="https://calendar.google.com/calendar/embed?src=en.canadian%23holiday%40group.v.calendar.google.com&ctz=America%2FNew_York"
+         style="border: 4px" width="650" height="450" frameborder="0" scrolling="no"></iframe>
+</html>

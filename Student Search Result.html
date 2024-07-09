@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<!--Student Search Result Page-->
+
+<html>
+    <head>
+        <script src="Student Results.js"> </script>
+        <script src="Student Search Page.js"> </script>
+        <link rel="stylesheet" href="Student Search Result.css">
+        <title>Student Search Result</title>
+    </head>
+<!--Added displayResults functions to onload, so the function is called as soon as the page loads-->
+
+    <body onload="displayResults()"> 
+
+        <div class="topbar"> 
+                <a href="Login Page.html">
+                <img  class="logo1" src="C:\Users\udayk\Downloads\xXpVpaZ__400x400.png" width="180" height="180">
+                </a>
+                <h1>Welcome Back!</h1> 
+                <a href="Login Page.html">
+                <img class="logo2"src="C:\Users\udayk\Downloads\xXpVpaZ__400x400.png" width="180" height="180">
+                </a>
+        </div>
+
+<!--Search Results Bar-->
+
+        <div class="searchbar"> 
+                <a href="Student Announcement Search Page.html">
+                <img class="home" src="C:\Users\udayk\Desktop\25694.png" width="50px" height="55px">
+                </a>
+                <p1 class="announcements"> Announcements  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    | </p1>
+                &nbsp;&nbsp; <input class="search" id="htmlSSearch" type="text" placeholder="Enter Keywords or a Date">
+
+                <form action="Student Search Result.html"> 
+                <button type="submit" onclick="getStudentInput()"> Search </button>
+                </form>
+        </div>
+
+
+
+<!--Announcement Results-->
+        <h5>Search Results</h5> 
+
+        <div class="resultbox"> 
+        
+                <p class= "Title" id="htmlSRAnnouncementTitle"></p>
+                <p class= "Body" id="htmlSRAnnouncementBody"></p>
+                <p id="htmlSRAnnouncementSorry"> </p >
+
+        </div>
+         
+        <br><br><br>
+
+<!--Filters-->
+        
+        <h3>Filters</h3>
+
+<!--Grades Checkboxes-->
+        <div class="Filters" id="htmlSFilter">
+                <div class="Grades">
+                        <h4>Grade</h4>
+                        <input id="htmlSAll" type="checkbox"> All
+                        <input id="htmlSGrade9" type="checkbox"> Grade 9
+                        <input id="htmlSGrade10" type="checkbox"> Grade 10
+                        <input id="htmlSGrade11" type="checkbox"> Grade 11
+                        <input id="htmlSGrade12" type="checkbox"> Grade 12
+                </div>   
+
+<!--Gender Checkboxes-->
+                <div class="Gender"> 
+                        <h4>Gender</h4>
+                        <input id="htmlSMale" type="checkbox"> Male
+                        <input id="htmlSFemale"type="checkbox"> Female
+                        <input id="htmlSOther" type="checkbox"> Other
+                        <input id= "htmlSGenderAll" type ="checkbox"> All 
+                </div>
+
+<!--Club Dropdown-->
+
+                <div class="Clubs">
+                        <h4>Clubs</h4>
+                        <label for="htmlTClubs">Select One :</label>
+                        <select id="htmlSClubs" >
+                                <option value="Select One"> Select One </option>
+                                <option value="Hack Club">Hack Club</option>
+                                <option value="Decca">Decca</option>
+                                <option value="Hosa">Hosa</option>
+                                <option value="Chess Club">Chess Club</option>
+                                <option value="Model UN">Model Un</option>
+                                <option value="Debate Club">Debate Club</option>
+                        </select>
+                </div>
+<!--Time Checkboxes-->
+                <div class="Time">
+                        <h4>Time</h4>
+                        <input id="htmlSBeforeSchool" type="checkbox"> Before School
+                        <input id="htmlSLunch" type="checkbox"> Lunch
+                        <input id="htmlSAfterSchool" type="checkbox"> After School
+                </div>
+        </div>
+        <div class="box"> </div>
+    </body>
+</html>
