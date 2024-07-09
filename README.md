@@ -1,0 +1,1 @@
+A portal where teachers can post announcements which will be saved to the browser's local storage. Some of the features include, a login system for students and teachers, an extensive search algorithm to help students search for posted announcements and a built in google calender. 
